@@ -1,0 +1,135 @@
+body{
+    text-align: center;
+    background-color: rgba(224, 255, 255, 0.74);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(xps-1gLdTsX3_70-unsplash.jpg);
+    background-size: 100%;
+    background-repeat:repeat-y;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    background-color: rgba(0, 217, 255, 0.404);
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 7px;
+
+}
+.btn{
+    background-color: rgba(0, 255, 255, 0.507);
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0 10px 10px 10px; 
+    cursor: pointer;
+    width: 100px;
+}
+
+.btn:hover{
+
+    background-color: lightcyan;
+}
+
+.div1{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(224, 255, 255, 0.651);
+    
+    padding: 50px;
+    border-radius: 7px;
+}
+
+input{
+    padding: 20px;
+    width: 250px;
+    border-radius: 7px;
+    font: 12px;
+
+}
+#btn1{
+    width: 140x;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.div2{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(224, 255, 255, 0.651);
+    
+    font-size: 20px;
+    border-radius: 7px;
+
+}/* Tell the <li> to not display numbers, but keep track of what the numbers should be */
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+  /* Outout the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+  ol li:before {
+      padding-top: 5px;
+    color:white;
+    content: counter(list) ".";
+    left:-32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+li{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 15px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+ol{
+    padding-left: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    input{
+        padding: 20px;
+        width: 180px;
+        border-radius: 7px;
+        font: 12px;
+    
+    }
+    #btn1{
+        margin-top: 10px;
+        width: 70x;
+        padding: 20px;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    li{
+        text-align: center;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .btn{
+        background-color: rgba(0, 255, 255, 0.507);
+        border: 1px solid pink;
+        outline: none;
+        border-radius: 3px;
+        padding: 15px;
+        font-weight: bolder;
+        font-size: 17px;
+        margin: 0 10px 10px 10px; 
+        cursor: pointer;
+        width: 100px;
+    }
+
+  }
