@@ -1,20 +1,31 @@
+header::before{
+    content: "";
+    background: url("https://source.unsplash.com/collection/190728/1600x900") no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
 body{
-    text-align: center;
-    background-color: rgba(224, 255, 255, 0.74);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(xps-1gLdTsX3_70-unsplash.jpg);
-    background-size: 100%;
-    background-repeat:repeat-y;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Zilla Slab', serif;    
+    
 }
 h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 35px;
-    background-color: rgba(0, 217, 255, 0.404);
     width: 200px;
-    margin: auto;
+    margin: 10px auto;
     margin-bottom: 20px;
     border-radius: 7px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn{
     background-color: rgba(0, 255, 255, 0.507);
@@ -36,9 +47,11 @@ h1{
 
 .div1{
     width: 80%;
-    margin: auto;
+    margin:20px  auto;
     background-color: rgba(224, 255, 255, 0.651);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 50px;
     border-radius: 7px;
 }
@@ -59,8 +72,7 @@ input{
 .div2{
     width: 80%;
     margin: auto;
-    background-color: rgba(224, 255, 255, 0.651);
-    
+    font-family: 'Rowdies', cursive; 
     font-size: 20px;
     border-radius: 7px;
 
@@ -85,6 +97,7 @@ ol li {
   }
 
 li{
+    font-family: 'Zilla Slab', serif;
     text-align: center;
     font-size: 27px;
     padding-top: 15px;
