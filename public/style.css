@@ -14,11 +14,12 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Zilla Slab', serif;    
-    
+    margin: 0;
+    padding: 0;    
 }
 h1{
     font-family: 'Fredoka One', cursive;
-    font-size: 35px;
+    font-size: 40px;
     width: 200px;
     margin: 10px auto;
     margin-bottom: 20px;
@@ -112,37 +113,59 @@ ol{
 
 
 @media screen and (max-width: 1200px) {
-    
+    body{
+        margin: 0;
+        padding: 0;
+    }
     input{
-        padding: 20px;
-        width: 180px;
-        border-radius: 7px;
+        padding: 8px;
         font: 12px;
     
     }
     #btn1{
-        margin-top: 10px;
-        width: 70x;
-        padding: 20px;
-        font-weight: bolder;
-        font-size: 15px;
+        margin: 0;
+        padding: 7px;
+        font-size: 12px;
+        width: 200px;
     }
     li{
+    font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ol li:before {
+        padding-top: 3px;
+      color:white;
+      content: counter(list) ".";
+      left:-3px;
+      position: absolute;
+      text-align: right;
+      width: 12px;
+      background-color: rgba(0, 0, 0, 0.568);
+      border-radius: 7px;
+      padding: 2px;
+    font-size: 12px;
+    }
+    li{
+        font-family: 'Zilla Slab', serif;
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
         padding-top: 15px;
+        font-weight: bolder;
+        margin-top: 10px;
     }
     .btn{
         background-color: rgba(0, 255, 255, 0.507);
-        border: 1px solid pink;
-        outline: none;
+        border: 1px solid black;
         border-radius: 3px;
-        padding: 15px;
+        padding: 7px;
         font-weight: bolder;
-        font-size: 17px;
-        margin: 0 10px 10px 10px; 
+        font-size: 10px;
+        margin: 10px 5px 0px 5px; 
         cursor: pointer;
-        width: 100px;
+        width: 70px;
     }
 
   }
